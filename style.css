@@ -33,3 +33,9 @@ body{
     display: grid;
     background-color: skyblue;
 }
+.flash{
+    background-color: white;
+}
+.userflash{
+    background-color: green;
+}
