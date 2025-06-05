@@ -33,8 +33,8 @@ function userFlash(btn){
 function levelUp(){
     userSeq = [];
     level++;
+    const audio = document.querySelectorAll("")
     p.innerText = `Level ${level}`;
-
      let randIdx  = Math.floor(Math.random()*3);
      let randColor = btns[randIdx];
     let randbtn = document.querySelector(`.${randColor}`);
@@ -90,3 +90,8 @@ function reset(){
 
 }
 
+document.addEventListener("keydown",function() 
+{
+     const audio = document.getElementById("welcomeAudio");
+     audio.play();
+}, {once:true})
